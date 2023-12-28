@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Apps</title>
+    <link rel="stylesheet" href="prak.css">
+</head>
+<body>
+
+    <h1>Transaksi Apps</h1>
+
+    <h2>Data Produk</h2>
+    <table>
+        <tr>
+            <th>Kode</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+        </tr>
+    </table>
+
+    <h2>Input Transaksi</h2>
+    <form>
+        <label for="kodeInput">Kode Produk:</label>
+        <input type="text" id="kodeInput" placeholder="Masukkan kode produk..." required>
+        <label for="jumlahInput">Jumlah:</label>
+        <input type="number" id="jumlahInput" min="1" placeholder="Masukkan jumlah produk..." required>
+        <button type="button" onclick="prosesTransaksi()">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
